@@ -1,42 +1,172 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.mainpage-title-text {
+    font-size: 30px;
+    color: rgb(41, 41, 41);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.mainpage-title-subtext {
+    font-size: 25px;
+    color: rgb(41, 41, 41);
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    background-color:rgba(234, 238, 239, 0.9);
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius:100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.2s;
+    animation: titleDiv 2.8s ease-in-out;
+    animation-iteration-count: infinite;
+
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainpage-links-text {
+    font-size: 20px;
+    color: rgb(41, 41, 41);  
+    transition: 0.5s; 
+    padding: 17px;
+    background-color:rgba(236, 236, 236, 0.9);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    text-decoration: dashed underline;
+    text-underline-offset: 5px;
+    animation: titleDiv 2.2s ease-in-out;
+    animation-iteration-count: infinite;
+    box-shadow: 8px 8px rgba(0,0,0,.5);
+
+}.mainpage-links-text:hover {
+    color:yellow;
+    background-color: grey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.mainpage-subtext-sitelinks-div {
+    display: flex;
+    gap: 20px;
 }
 
-.card {
-  padding: 2em;
+.mainpage-headers {
+    font-size: 20px;
+    color: rgb(41, 41, 41);  
+    transition: 0.5s; 
+    padding: 17px;
+    background-color:rgba(236, 236, 236, 0.9);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    animation: titleDiv 2.4s ease-in-out;
+    animation-iteration-count: infinite;
+    box-shadow: 8px 8px rgba(0,0,0,.1);
+
 }
 
-.read-the-docs {
-  color: #888;
+.mainpage-sitelinks-text {
+    font-size: 30px;
+    color: rgb(41, 41, 41);  
+    transition: 0.5s; 
+    padding: 20px;
+    background-color:rgba(253, 253, 253, 0.9);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    text-decoration: dashed underline;
+    text-underline-offset: 5px;
+    animation: titleDiv 2.2s ease-in-out;
+    animation-iteration-count: infinite;
+    box-shadow: 8px 8px rgba(0,0,0,.5);
+    border: none;
+
+}.mainpage-sitelinks-text:hover {
+    color:yellow;
+    background-color: grey;
+    cursor: pointer;
 }
+
+
+.mainpage-links-button {
+    border: none;
+    background-color: transparent;
+}
+
+.mainpage-title-div {
+    animation: titleDiv 3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.mainpage-subtext-div {
+    display: flex;
+    gap: 10px;
+}
+.cloud { 
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    background-color:rgba(240, 240, 240, 0.9);
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius:100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.2s;
+    margin-top: 10px;
+} 
+
+
+@keyframes titleDiv {
+    from {
+        transform: translateY(0px);
+    } 
+
+    50% {
+        transform: translateY(5px);
+    }
+    
+    to {
+        translate: translateY(0px);
+    }
+}
+
+.mainpage-main-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    gap: 20px;
+    animation: fadein 1s ease-out;
+    animation-iteration-count: 1;
+    overflow-y:scroll;
+    scrollbar-width:none;
+    padding-top: 20px;
+}
+body {
+    background-image: linear-gradient(to left top, rgb(55, 159, 200), rgb(183, 234, 255));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.sun {
+    position: absolute;
+    top: 10%; /* Adjust position as needed */
+    left: 10%;
+    width: 30vw;
+    height: 30vw;
+    background: orange;
+    border-radius: 50%;
+    box-shadow: 0 0 10px orange, 0 0 60px orange, 0 0 200px yellow, inset 0 0 80px yellow;
+    z-index: -1;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
