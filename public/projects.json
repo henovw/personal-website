@@ -4,7 +4,7 @@
             "title": "rumi",
             "key": 5,
             "time": "August 2025 - Present",
-            "description": "Currently developing a roommate finder app in Swift. Built to help university students find housing more easily. Backend database is Firebase, while also using Firebase authentication.",
+            "description": "Currently developing a roommate finder app in Swift. Built to help university students find housing more easily. Backend database is Firebase, while also using Firebase authentication. ",
             "link": "",
             "linktype": "",
             "tags": [
@@ -17,7 +17,7 @@
             "title": "cardmatch",
             "key": 4,
             "time": "January 2026",
-            "description": "Completed as a submission for nwPlus' nwHacks 2026, cardmatch is a financial site dedicated to helping users find the credit card that best suits their needs. By inputting statements and answering a short questionnaire, the user is shown potential card matches while also seeing their spending broken down into categories.",
+            "description": "Completed as a submission for nwPlus' nwHacks 2026, cardmatch is a financial site dedicated to helping users find the credit card that best suits their needs. By inputting statements and answering a short questionnaire, the user is shown potential card matches while also seeing their spending broken down into categories. I focused on frontend development.",
             "link": "https://www.youtube.com/watch?si=PlSn5jjZcYoNg7yu&v=mbr0nw3EORE&feature=youtu.be",
             "linktype": "Youtube demo",
             "tags": [
@@ -48,7 +48,7 @@
             "title": "NeighborGood",
             "key": 2,
             "time": "November 2025",
-            "description": "Completed as a submission for nwPlus' HackCamp 2025, NeighborGood is a site dedicated to helping philanthropic organizations by letting organizations make postings of the donations they need. Users can enter the site, sort by the items they can donate, and easily see which organizations are in need of their donations.",
+            "description": "Completed as a submission for nwPlus' HackCamp 2025, NeighborGood is a site dedicated to helping philanthropic organizations by letting organizations make postings of the donations they need. Users can enter the site, sort by the items they can donate, and easily see which organizations are in need of their donations. I focused on frontend.",
             "link": "https://www.youtube.com/watch?v=bwlGt4FDlcE",
             "linktype": "Youtube demo",
             "tags": [

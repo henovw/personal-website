@@ -11,7 +11,10 @@
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     animation: bounce 2.3s ease-in-out;
     animation-iteration-count: infinite;
+    transition: 0.2s;
     
+}.projects-project-div:hover {
+    background-color: rgba(255,255,255,0.88);
 }
 
 .project-link {
@@ -24,6 +27,9 @@
     width: fit-content;
     transition: 0.2s;
     background-color: white;
+    align-items: center;
+    display: flex;
+    gap: 4px;
 }
 
 .project-link:hover {
@@ -58,8 +64,7 @@
     overflow-y:scroll;
     scrollbar-width:none;
     padding-bottom: 30px;
-
-}
+} 
 
 .projects-tag-text {
     padding: 10px;

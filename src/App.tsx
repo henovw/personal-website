@@ -1,9 +1,7 @@
-import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import { Computer, Activity, ContactRound, ScrollText, Presentation } from 'lucide-react';
 import './App.css'
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function App() {
     const navigate = useNavigate();
@@ -15,17 +13,20 @@ function App() {
     return (
         <>
         <div>
-        <div className="sun"/>
+        <div className="sundiv">
+            <div className="ray"></div>
+            <div className="sun"></div>
+        </div>
         <div className="mainpage-main-div">
         
         <div className="mainpage-title-div cloud">
             <h1 className="mainpage-title-text spline-sans-mono-700">Henry van Weelderen</h1>
         </div>
         <div className="mainpage-subtext-div">
-            <h3 className="mainpage-title-subtext spline-sans-mono-500">Computer Science @ UBC</h3>
-            <h3 className="mainpage-title-subtext spline-sans-mono-500">UBC Open Robotics</h3>
+            <h3 className="mainpage-title-subtext gabarito-600">Computer Science @ UBC</h3>
+            <h3 className="mainpage-title-subtext gabarito-600">UBC Open Robotics</h3>
         </div>
-            <h3 className="mainpage-headers spline-sans-mono-500">Pages</h3>
+            <h3 className="mainpage-headers gabarito-500">Pages</h3>
         <div className="mainpage-subtext-sitelinks-div">
             <button onClick={redirectProjects} className="mainpage-sitelinks-text spline-sans-mono-600">
             <Presentation />
@@ -37,7 +38,7 @@ function App() {
             About me
             </a>
         </div>
-            <h3 className="mainpage-headers spline-sans-mono-500">Links</h3>
+            <h3 className="mainpage-headers gabarito-500">Links</h3>
         <div className="mainpage-subtext-div">
             <a href="https://www.linkedin.com/in/henry-van-weelderen-5b8b97160/" target="_blank" className="mainpage-links-text spline-sans-mono-600">
             <Activity />
