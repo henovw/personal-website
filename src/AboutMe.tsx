@@ -32,7 +32,7 @@ function AboutMe() {
             </div>
 
             </div>
-
+                <div className="blankfiller"/>
         </div>
     )
 }

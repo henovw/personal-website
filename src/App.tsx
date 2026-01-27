@@ -58,7 +58,7 @@ function App() {
             <Computer />
             </a>
            
-            <a href="/public/henryresume.docx" target="_blank" className="mainpage-links-text spline-sans-mono-600">
+            <a href="/henryresume.docx" target="_blank" className="mainpage-links-text spline-sans-mono-600">
             
             Resume
             <ScrollText />
