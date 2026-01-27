@@ -141,13 +141,12 @@
     gap: clamp(15px, 3vw, 20px);
     animation: fadein 1s ease-out;
     animation-iteration-count: 1;
-    overflow-y:scroll;
     scrollbar-width:none;
     padding-top: clamp(15px, 3vw, 20px);
 }
 
 body {
-    background-image: linear-gradient(to left top, rgb(55, 159, 200), rgb(183, 234, 255));
+    background-image: linear-gradient(to left top, rgb(51, 145, 182), rgb(185, 229, 248));
     background-repeat: no-repeat;
     background-attachment: fixed;
 }

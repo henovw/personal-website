@@ -19,11 +19,10 @@ function Projects() {
 
 
     return (
-        <div>
-        <div className="sundiv">
+        <div className="projects-main-div">
+            <div className="sundiv">
         <div className="sun"/>
         </div>
-        <div className="projects-main-div">
             
 
             <div className="mainpage-title-div cloud">
@@ -58,7 +57,6 @@ function Projects() {
             ))}
             
 
-        </div>
         </div>
     )
 }

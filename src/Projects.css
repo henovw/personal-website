@@ -67,10 +67,10 @@
     gap: clamp(20px, 4vw, 30px);
     animation: fadein 1s ease-out;
     animation-iteration-count: 1;
-    overflow-y: scroll;
     scrollbar-width: none;
     padding-bottom: clamp(20px, 4vw, 30px);
     padding-top: clamp(15px, 3vw, 20px);
+    margin-bottom: 10px;
 } 
 
 .projects-tag-text {
@@ -96,7 +96,6 @@
     
     .projects-main-div {
         gap: 20px;
-        padding-bottom: 20px;
     }
 }
 

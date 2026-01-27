@@ -16,11 +16,12 @@ function App() {
     return (
         <>
         <div>
-        <div className="sundiv">
+        
+        <div className="mainpage-main-div">
+            <div className="sundiv">
             <div className="ray"></div>
             <div className="sun"></div>
         </div>
-        <div className="mainpage-main-div">
         
         <div className="mainpage-title-div cloud">
             <h1 className="mainpage-title-text spline-sans-mono-700">Henry van Weelderen</h1>

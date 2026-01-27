@@ -32,7 +32,7 @@
         {
             "title": "aidYVR",
             "key": 3,
-            "time": "November 2025 - December 2025",
+            "time": "Nov - Dec 2025",
             "description": "Developed a website that allows philanthropic organizations to make volunteer position postings. Organizations can enter job location and information. Users can allow the site to view their location and sort positions by different categories. Used Google Maps API to plot positions and Geolocation to attain coordinates from addresses.",
             "link": "https://github.com/henovw/aidYVR",
             "linktype": "GitHub repository",
