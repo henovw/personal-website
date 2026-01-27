@@ -1,5 +1,5 @@
 
-import { Computer, Activity, ContactRound, ScrollText, Presentation } from 'lucide-react';
+import { Computer, CircleUser, ContactRound, ScrollText, Presentation } from 'lucide-react';
 import './App.css'
 import { useNavigate } from 'react-router-dom';
 
@@ -8,6 +8,9 @@ function App() {
 
     const redirectProjects = () => {
         navigate("/projects")
+    }
+    const redirectAboutMe = () => {
+        navigate("/aboutme")
     }
 
     return (
@@ -33,15 +36,15 @@ function App() {
             Projects
             </button>
 
-            <a href="https://www.linkedin.com/in/henry-van-weelderen-5b8b97160/" target="_blank" className="mainpage-sitelinks-text spline-sans-mono-600">
+            <button onClick={redirectAboutMe} className="mainpage-sitelinks-text spline-sans-mono-600">
             <ContactRound />
             About me
-            </a>
+            </button>
         </div>
             <h3 className="mainpage-headers gabarito-500">Links</h3>
         <div className="mainpage-subtext-div">
             <a href="https://www.linkedin.com/in/henry-van-weelderen-5b8b97160/" target="_blank" className="mainpage-links-text spline-sans-mono-600">
-            <Activity />
+            <CircleUser />
             LinkedIn
             </a>
 
