@@ -1,41 +1,46 @@
 .projects-project-div {
-    width: 70vw;
+    width: clamp(300px, 70vw, 1200px);
     background: rgba(255, 255, 255, 0.8);
     height: fit-content;
-    padding: 30px;
+    padding: clamp(20px, 4vw, 30px);
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    border-radius: 20px;
+    gap: clamp(8px, 1.5vw, 10px);
+    border-radius: clamp(15px, 3vw, 20px);
     box-shadow: 20px 20px rgba(0, 0, 0, 0.2);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     animation: bounce 2.3s ease-in-out;
     animation-iteration-count: infinite;
     transition: 0.2s;
-    
-}.projects-project-div:hover {
+}
+
+.projects-project-div:hover {
     background-color: rgba(255,255,255,0.88);
 }
 
+.project-description-text {
+    font-size: clamp(17px, 3vw, 23px);
+}
+
 .project-link {
-    text-decoration:none;
-    font-size: 20px;
+    text-decoration: none;
+    font-size: clamp(16px, 3vw, 20px);
     color: black;
-    border: 4px dashed black;
-    border-radius: 10px;
-    padding: 5px;
+    border: clamp(2px, 0.5vw, 4px) dashed black;
+    border-radius: clamp(8px, 1.5vw, 10px);
+    padding: clamp(4px, 1vw, 5px);
     width: fit-content;
     transition: 0.2s;
     background-color: white;
     align-items: center;
     display: flex;
-    gap: 4px;
+    gap: clamp(3px, 0.5vw, 4px);
 }
 
 .project-link:hover {
     color: yellow;
     background-color: grey;
-    border: 4px dashed yellow;
+    border: clamp(2px, 0.5vw, 4px) dashed yellow;
     transform: scale(1.01);
     cursor: pointer;
 }
@@ -43,13 +48,14 @@
 @keyframes bounce {
     from {
         transform: translateY(0px);
-    } 50% {
+    } 
+    50% {
         transform: translateY(5px);
-    } to {
+    } 
+    to {
         transform: translateY(0px);
     }
 }
-
 
 .projects-main-div {
     width: 100%;
@@ -58,24 +64,54 @@
     flex-direction: column;
     height: 100vh;
     position: relative;
-    gap: 30px;
+    gap: clamp(20px, 4vw, 30px);
     animation: fadein 1s ease-out;
     animation-iteration-count: 1;
-    overflow-y:scroll;
-    scrollbar-width:none;
-    padding-bottom: 30px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding-bottom: clamp(20px, 4vw, 30px);
+    padding-top: clamp(15px, 3vw, 20px);
 } 
 
 .projects-tag-text {
-    padding: 10px;
-    font-size: 15px;
+    padding: clamp(8px, 1.5vw, 10px);
+    font-size: clamp(13px, 2.5vw, 15px);
     background-color: white;
-    border-radius: 20px;
+    border-radius: clamp(15px, 2.5vw, 20px);
 }
 
 .projects-tag-div {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: clamp(8px, 1.5vw, 10px);
     flex-wrap: wrap;
+}
+
+/* Mobile optimizations */
+@media screen and (max-width: 768px) {
+    .projects-project-div {
+        width: 90vw;
+        padding: 20px;
+    }
+    
+    .projects-main-div {
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projects-project-div {
+        width: 80vw;
+        padding: 15px;
+    }
+    
+    .project-link {
+        font-size: 16px;
+    }
+    
+    .projects-tag-text {
+        font-size: 13px;
+        padding: 8px;
+    }
 }

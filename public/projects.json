@@ -21,6 +21,7 @@
             "link": "https://www.youtube.com/watch?si=PlSn5jjZcYoNg7yu&v=mbr0nw3EORE&feature=youtu.be",
             "linktype": "Youtube demo",
             "tags": [
+                "Hackathon",
                 "Typescript",
                 "Next.js",
                 "Openrouter",
@@ -52,6 +53,7 @@
             "link": "https://www.youtube.com/watch?v=bwlGt4FDlcE",
             "linktype": "Youtube demo",
             "tags": [
+                "Hackathon",
                 "Javascript",
                 "React.js",
                 "Vite"

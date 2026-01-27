@@ -46,7 +46,7 @@ function Projects() {
                     
                 </div>
 
-                <span className="gabarito-300" style={{"fontSize": "23px"}}>{project.description}</span>
+                <span className="project-description-text gabarito-300">{project.description}</span>
 
                 <div className="projects-tag-div">
                     {project.tags.map((tag) => (

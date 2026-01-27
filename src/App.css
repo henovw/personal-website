@@ -1,14 +1,15 @@
+/* Use clamp() for fluid typography - scales between min and max based on viewport */
 .mainpage-title-text {
-    font-size: 30px;
+    font-size: clamp(24px, 5vw, 30px);
     color: rgb(41, 41, 41);
 }
 
 .mainpage-title-subtext {
-    font-size: 25px;
+    font-size: clamp(18px, 4vw, 25px);
     color: rgb(41, 41, 41);
     width: fit-content;
     height: fit-content;
-    padding: 20px;
+    padding: clamp(15px, 3vw, 20px);
     background-color:rgba(234, 238, 239, 0.9);
     box-shadow: 10px 10px rgba(0,0,0,0.2);
     border-radius:100px;
@@ -18,14 +19,13 @@
     transition: 0.2s;
     animation: titleDiv 2.8s ease-in-out;
     animation-iteration-count: infinite;
-
 }
 
 .mainpage-links-text {
-    font-size: 20px;
+    font-size: clamp(16px, 3vw, 20px);
     color: rgb(41, 41, 41);  
     transition: 0.5s; 
-    padding: 17px;
+    padding: clamp(12px, 2.5vw, 17px);
     background-color:rgba(236, 236, 236, 0.9);
     border-radius: 100px;
     display: flex;
@@ -35,22 +35,25 @@
     animation: titleDiv 2.2s ease-in-out;
     animation-iteration-count: infinite;
     box-shadow: 8px 8px rgba(0,0,0,.5);
+}
 
-}.mainpage-links-text:hover {
+.mainpage-links-text:hover {
     color:yellow;
     background-color: grey;
 }
 
 .mainpage-subtext-sitelinks-div {
     display: flex;
-    gap: 20px;
+    gap: clamp(10px, 2vw, 20px);
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    justify-content: center;
 }
 
 .mainpage-headers {
-    font-size: 20px;
+    font-size: clamp(16px, 3vw, 20px);
     color: rgb(41, 41, 41);  
     transition: 0.5s; 
-    padding: 17px;
+    padding: clamp(12px, 2.5vw, 17px);
     background-color:rgba(236, 236, 236, 0.9);
     border-radius: 60px;
     display: flex;
@@ -58,14 +61,13 @@
     animation: titleDiv 2.4s ease-in-out;
     animation-iteration-count: infinite;
     box-shadow: 8px 8px rgba(0,0,0,.1);
-
 }
 
 .mainpage-sitelinks-text {
-    font-size: 30px;
+    font-size: clamp(17px, 4vw, 30px);
     color: rgb(41, 41, 41);  
     transition: 0.5s; 
-    padding: 20px;
+    padding: clamp(15px, 3vw, 20px);
     background-color:rgba(253, 253, 253, 0.9);
     border-radius: 100px;
     display: flex;
@@ -76,13 +78,13 @@
     animation-iteration-count: infinite;
     box-shadow: 8px 8px rgba(0,0,0,.5);
     border: none;
+}
 
-}.mainpage-sitelinks-text:hover {
+.mainpage-sitelinks-text:hover {
     color:yellow;
     background-color: grey;
     cursor: pointer;
 }
-
 
 .mainpage-links-button {
     border: none;
@@ -96,12 +98,15 @@
 
 .mainpage-subtext-div {
     display: flex;
-    gap: 10px;
+    gap: clamp(5px, 1.5vw, 10px);
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 .cloud { 
     width: fit-content;
     height: fit-content;
-    padding: 20px;
+    padding: clamp(10px, 3vw, 20px);
     background-color:rgba(240, 240, 240, 0.9);
     box-shadow: 10px 10px rgba(0,0,0,0.2);
     border-radius:100px;
@@ -111,7 +116,6 @@
     transition: 0.2s;
     margin-top: 10px;
 } 
-
 
 @keyframes titleDiv {
     from {
@@ -123,7 +127,7 @@
     }
     
     to {
-        translate: translateY(0px);
+        transform: translateY(0px); /* Fixed: was 'translate' */
     }
 }
 
@@ -134,13 +138,14 @@
     flex-direction: column;
     height: 100vh;
     position: relative;
-    gap: 20px;
+    gap: clamp(15px, 3vw, 20px);
     animation: fadein 1s ease-out;
     animation-iteration-count: 1;
     overflow-y:scroll;
     scrollbar-width:none;
-    padding-top: 20px;
+    padding-top: clamp(15px, 3vw, 20px);
 }
+
 body {
     background-image: linear-gradient(to left top, rgb(55, 159, 200), rgb(183, 234, 255));
     background-repeat: no-repeat;
@@ -164,20 +169,6 @@ body {
     width: 30vw;
     height: 30vw;
 }
-/*  
-.ray {
-    position: absolute;
-    width: 20%;
-    height: 600%;
-    background: rgba(255,255,0,0.4);
-    box-shadow:0 0 70px rgba(255,255,0,0.4);
-    top: -250%;
-    left: 40%;
-    z-index: -1;
-    transform-origin: center center;
-    animation: rotate 10s linear infinite;
-    overflow: hidden;
-}  */
 
 @keyframes rotate {
     from {
@@ -187,7 +178,6 @@ body {
         transform: rotate(360deg);
     }
 }
-
 
 @keyframes fadein {
     from {
@@ -200,3 +190,28 @@ body {
     }
 }
 
+/* Mobile-specific adjustments */
+@media screen and (max-width: 768px) {
+    .mainpage-subtext-sitelinks-div,
+    .mainpage-subtext-div {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sun {
+        width: 40vw;
+        height: 40vw;
+    }
+    
+    .sundiv {
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+/* Very small screens */
+@media screen and (max-width: 480px) {
+    .mainpage-main-div {
+        padding-top: 10px;
+    }
+}
