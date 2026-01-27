@@ -5,9 +5,9 @@ import "./AboutMe.css"
 function AboutMe() {
     return (
         <div>
-            <div className="sundiv">
+            {/* <div className="sundiv">
                 <div className="sun"/>
-            </div>
+            </div> */}
             <div className="projects-main-div">
             <div className="mainpage-title-div cloud">
             <h1 className="mainpage-title-text spline-sans-mono-700">About me</h1>

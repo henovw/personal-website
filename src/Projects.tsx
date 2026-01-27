@@ -19,17 +19,18 @@ function Projects() {
 
 
     return (
+        <div>
         <div className="projects-main-div">
-            <div className="sundiv">
+            {/* <div className="sundiv">
         <div className="sun"/>
-        </div>
+        </div> */}
             
 
             <div className="mainpage-title-div cloud">
             <h1 className="mainpage-title-text spline-sans-mono-700">Projects</h1>
             </div>
             {projects.map((project) => (
-                <div className="projects-project-div" key={project.key}>
+                <div className={`projects-project-div ${project.key === 0 ? "last-project" : ""}`} key={project.key}>
 
                 <div style={{"display": "flex", "justifyContent": "space-between", "gap": "5px"}}>
                     <h2 className="mainpage-title-text  spline-sans-mono-600">{project.title}</h2>
@@ -56,7 +57,8 @@ function Projects() {
                 </div>
             ))}
             
-
+            
+        </div>
         </div>
     )
 }

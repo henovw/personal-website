@@ -18,11 +18,11 @@ function App() {
         <div>
         
         <div className="mainpage-main-div">
-            <div className="sundiv">
+            {/* <div className="sundiv">
             <div className="ray"></div>
             <div className="sun"></div>
         </div>
-        
+         */}
         <div className="mainpage-title-div cloud">
             <h1 className="mainpage-title-text spline-sans-mono-700">Henry van Weelderen</h1>
         </div>
@@ -33,30 +33,35 @@ function App() {
             <h3 className="mainpage-headers gabarito-500">Pages</h3>
         <div className="mainpage-subtext-sitelinks-div">
             <button onClick={redirectProjects} className="mainpage-sitelinks-text spline-sans-mono-600">
-            <Presentation />
+            
             Projects
+            <Presentation />
             </button>
 
             <button onClick={redirectAboutMe} className="mainpage-sitelinks-text spline-sans-mono-600">
-            <ContactRound />
+            
             About me
+            <ContactRound />
             </button>
         </div>
             <h3 className="mainpage-headers gabarito-500">Links</h3>
         <div className="mainpage-subtext-div">
             <a href="https://www.linkedin.com/in/henry-van-weelderen-5b8b97160/" target="_blank" className="mainpage-links-text spline-sans-mono-600">
-            <CircleUser />
+            
             LinkedIn
+            <CircleUser />
             </a>
 
             <a href="https://github.com/henovw" target="_blank" className="mainpage-links-text spline-sans-mono-600">
-            <Computer />
+            
             GitHub
+            <Computer />
             </a>
            
             <a href="/public/henryresume.docx" target="_blank" className="mainpage-links-text spline-sans-mono-600">
-            <ScrollText />
+            
             Resume
+            <ScrollText />
             </a>
         </div>
         </div>

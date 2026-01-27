@@ -5,13 +5,14 @@
     padding: clamp(20px, 4vw, 30px);
     display: flex;
     flex-direction: column;
-    gap: clamp(8px, 1.5vw, 10px);
+    gap: clamp(10px, 1.5vw, 10px);
     border-radius: clamp(15px, 3vw, 20px);
     box-shadow: 20px 20px rgba(0, 0, 0, 0.2);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     animation: bounce 2.3s ease-in-out;
     animation-iteration-count: infinite;
     transition: 0.2s;
+    margin-bottom: 10px;
 }
 
 .projects-project-div:hover {
@@ -70,7 +71,6 @@
     scrollbar-width: none;
     padding-bottom: clamp(20px, 4vw, 30px);
     padding-top: clamp(15px, 3vw, 20px);
-    margin-bottom: 10px;
 } 
 
 .projects-tag-text {
