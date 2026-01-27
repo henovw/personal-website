@@ -63,6 +63,7 @@ function App() {
             Resume
             <ScrollText />
             </a>
+            <div className="blankfiller"></div>
         </div>
         </div>
         </div>

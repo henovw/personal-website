@@ -36,7 +36,7 @@
     animation: titleDiv 2.2s ease-in-out;
     animation-iteration-count: infinite;
     box-shadow: 8px 8px rgba(0,0,0,.5);
-    border: 4px dashed rgb(41,41,41);
+    border: clamp(2px, 0.5vw, 4px) dashed black;
 }
 
 .mainpage-links-text:hover {
@@ -80,7 +80,7 @@
     animation: titleDiv 2.2s ease-in-out;
     animation-iteration-count: infinite;
     box-shadow: 8px 8px rgba(0,0,0,.5);
-    border: 5px dashed rgb(41,41,41);
+    border: clamp(3px, 0.5vw, 5px) dashed black;
 }
 
 .mainpage-sitelinks-text:hover {
@@ -187,4 +187,9 @@
     .mainpage-main-div {
         padding-top: 10px;
     }
+}
+
+.blankfiller {
+    opacity: 0;
+    height: 10px;
 }
