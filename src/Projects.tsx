@@ -30,7 +30,8 @@ function Projects() {
             <h1 className="mainpage-title-text spline-sans-mono-700">Projects</h1>
             </div>
             {projects.map((project) => (
-                <div className={`projects-project-div ${project.key === 0 ? "last-project" : ""}`} key={project.key}>
+                <div className={`projects-project-div ${project.key === 0 ? "last-project" : ""}
+                ${project.key % 2 === 0 ? "project-one" : "project-two"}`} key={project.key}>
 
                 <div style={{"display": "flex", "justifyContent": "space-between", "gap": "5px"}}>
                     <h2 className="mainpage-title-text  spline-sans-mono-600">{project.title}</h2>
