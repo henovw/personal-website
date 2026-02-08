@@ -1,6 +1,20 @@
 {
     "projects": [
         {
+            "title": "MusicMatch",
+            "key": 6,
+            "time": "February 2026",
+            "description": "Completed as a submission for UBC Science Undergraduate Society's Hack The Coast 2026. MusicMatch is a social networking app built to help users with similar music taste meet. By swiping on popular artists pulled by LastFM's chart API, users can view popular artists and swipe. They are then matched with people with similar music taste to chat.",
+            "link": "youtube.com/watch?v=cKtfH-gBwEI&feature=youtu.be",
+            "linktype": "Youtube demo",
+            "tags": [
+                "Swift",
+                "SwiftUI",
+                "LastFM API",
+                "iTunes API"
+            ]
+        },
+        {
             "title": "rumi",
             "key": 5,
             "time": "August 2025 - Present",

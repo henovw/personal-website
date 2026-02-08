@@ -4,7 +4,7 @@ import "./AboutMe.css"
 
 function AboutMe() {
     return (
-        <div>
+        <div style={{marginBottom: "100px"}}>
             {/* <div className="sundiv">
                 <div className="sun"/>
             </div> */}
@@ -30,9 +30,9 @@ function AboutMe() {
 
 
             </div>
-
+            <div className="blankfiller">a</div>
             </div>
-                <div className="blankfiller"/>
+                
         </div>
     )
 }
