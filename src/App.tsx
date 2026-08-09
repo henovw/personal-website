@@ -1,5 +1,5 @@
 
-import { Computer, CircleUser, ContactRound, ScrollText, Presentation } from 'lucide-react';
+import { Computer, CircleUser, ContactRound, ScrollText, Presentation, Projector } from 'lucide-react';
 import './App.css'
 import { useNavigate } from 'react-router-dom';
 
@@ -27,22 +27,28 @@ function App() {
             <h1 className="mainpage-title-text spline-sans-mono-700">Henry van Weelderen</h1>
         </div>
         <div className="mainpage-subtext-div">
-            <h3 className="mainpage-title-subtext gabarito-600">Computer Science @ UBC</h3>
-            <h3 className="mainpage-title-subtext gabarito-600">UBC Open Robotics</h3>
+            <h3 className="mainpage-title-subtext gabarito-600">Computer Science Co-Op @ UBC</h3>
+            <h3 className="mainpage-title-subtext gabarito-600">Analytics Student @ Suncor</h3>
+            <h3 className="mainpage-title-subtext gabarito-600">Programming Team @ UBC Open Robotics</h3>
         </div>
             <h3 className="mainpage-headers gabarito-500">Pages</h3>
         <div className="mainpage-subtext-sitelinks-div">
+
             <button onClick={redirectProjects} className="mainpage-sitelinks-text spline-sans-mono-600">
-            
             Projects
             <Presentation />
             </button>
 
-            <button onClick={redirectAboutMe} className="mainpage-sitelinks-text spline-sans-mono-600">
-            
+            {/* <button onClick={redirectAboutMe} className="mainpage-sitelinks-text spline-sans-mono-600">
             About me
             <ContactRound />
+            </button> */}
+
+            <button onClick={() => navigate("/experience")} className="mainpage-sitelinks-text spline-sans-mono-600">
+            Experience
+            <Projector />
             </button>
+
         </div>
             <h3 className="mainpage-headers gabarito-500">Links</h3>
         <div className="mainpage-subtext-div">

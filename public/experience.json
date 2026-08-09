@@ -1,0 +1,42 @@
+{
+    "experience": [
+        {
+            "employer": "Suncor",
+            "key": 0,
+            "location": "Calgary",
+            "termlength": "8 months",
+            "date": "May - December 2026",
+            "position": "Analytics and Reporting Student",
+            "description": "Co-Op student working on an internal AI application to allow employees to access and query their data directly. Developed frontend using Typescript, React, Next.JS, Tailwind and developing backend with FastAPI.",
+            "skills": ["Typescript", "Next.JS", "GitHub", "Python", "FastAPI", "Tailwind"]
+        },
+        {
+            "employer": "Calgary Golf and Country Club",
+            "key": 1,
+            "location": "Calgary",
+            "date": "Summers 2024 and 2025",
+            "position": "Grounds Crew",
+            "description": "Maintained facilties of a 115+ year old private golf course. Part of team providing high-quality turf management and operating a range of specialized equipment.",
+            "skills": ["Teamwork", "Lawn care"]
+        },
+        {
+            "employer": "Calgary Stampede",
+            "key": 2,
+            "location": "Calgary",
+            "date": "Summer 2023",
+            "position": "Guest Services",
+            "description": "Customer service and security roles at various facilities",
+            "skills": ["Customer Service"]
+        },
+        {
+            "employer": "One Exchange Corporation",
+            "key": 3,
+            "location": "Calgary",
+            "termlength": "4 months",
+            "date": "Summer 2022",
+            "position": "Java Programmer",
+            "description": "Diagnosed and reported critical issues for commodity-trading platform upgrades. Performed system testing, defect tracking, and reporting test results to the development team.",
+            "skills": ["Java", "Selenium"]
+        }
+    ]
+}
