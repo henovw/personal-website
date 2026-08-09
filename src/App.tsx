@@ -1,17 +1,10 @@
 
-import { Computer, CircleUser, ContactRound, ScrollText, Presentation, Projector } from 'lucide-react';
+import { Computer, CircleUser, ScrollText, Presentation, Projector } from 'lucide-react';
 import './App.css'
 import { useNavigate } from 'react-router-dom';
 
 function App() {
     const navigate = useNavigate();
-
-    const redirectProjects = () => {
-        navigate("/projects")
-    }
-    const redirectAboutMe = () => {
-        navigate("/aboutme")
-    }
 
     return (
         <>
@@ -34,7 +27,7 @@ function App() {
             <h3 className="mainpage-headers gabarito-500">Pages</h3>
         <div className="mainpage-subtext-sitelinks-div">
 
-            <button onClick={redirectProjects} className="mainpage-sitelinks-text spline-sans-mono-600">
+            <button onClick={() => navigate("/projects")} className="mainpage-sitelinks-text spline-sans-mono-600">
             Projects
             <Presentation />
             </button>
